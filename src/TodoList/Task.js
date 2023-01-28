@@ -1,4 +1,4 @@
-import { TaskBlock, TaskCreateBtn, TaskForm, TaskInput } from "./style";
+import { TaskBlock, TaskCreateBtn, TaskForm, TaskInput, TaskTypeCount } from "./style";
 
 function Task() {
     return (
@@ -7,6 +7,7 @@ function Task() {
             <TaskForm>
                 <TaskInput />
                 <TaskCreateBtn>Add Task</TaskCreateBtn>
+                <TaskTypeCount>Pending Tasks Count</TaskTypeCount>
             </TaskForm>
 
         </TaskBlock>

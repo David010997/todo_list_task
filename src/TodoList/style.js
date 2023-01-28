@@ -27,6 +27,6 @@ const TaskCreateBtn = styled.button`
     margin-left:5px;
 `
 const TaskTypeCount = styled.span`
-    
+    font-size:16px;
 `
-export { TaskBlock, TaskInput, TaskCreateBtn, TaskForm };
+export { TaskBlock, TaskInput, TaskCreateBtn, TaskForm, TaskTypeCount };
