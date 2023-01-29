@@ -9,16 +9,19 @@ const TaskBlock = styled.div`
 const TaskForm = styled.div`
     display:flex;
 `
-
+const TaskCountBlock = styled(TaskForm)`
+    margin-top:10px;
+`
 const TaskInput = styled.input`
     padding: 10px 18px;
     width:250px;
     box-sizing: border-box;
 `
 const TaskCreateBtn = styled.button`
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     border: none;
     color: white;
+    cursor: pointer;
     padding: 10px 18px;
     text-align: center;
     text-decoration: none;
@@ -28,5 +31,18 @@ const TaskCreateBtn = styled.button`
 `
 const TaskTypeCount = styled.span`
     font-size:16px;
+    margin-left:20px;
+    margin-right:20px;
 `
-export { TaskBlock, TaskInput, TaskCreateBtn, TaskForm, TaskTypeCount };
+
+const TaskText = styled.p`
+    font-size:16px;
+    cursor:pointer;
+    color: red;
+    text-decoration: ${({ status }) => status ? 'line-through' : 'none'};
+`
+const ErrorText = styled.p`
+    font-size:16px;
+    color: red;
+`
+export { TaskBlock, TaskInput, TaskCreateBtn, TaskForm, TaskTypeCount, TaskCountBlock, TaskText, ErrorText };
